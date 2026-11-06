@@ -1,0 +1,17 @@
+Fecha,Hora,Usuario,Nombre,Rol,Estado,Detalle
+2026-09-13,15:30:00,admin,Administrador,administrador,Exitoso,Inicio de sesion inicial en POS
+2026-09-30,14:41:05,admin,Intento fallido,desconocido,Fallido,Contraseña incorrecta para usuario: admin
+2026-09-30,14:41:09,admin,Intento fallido,desconocido,Fallido,Contraseña incorrecta para usuario: admin
+2026-09-30,14:41:19,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,14:51:00,cajero_juan,Cajero 1 - Turno Mañana,cajero,Exitoso,Sesion iniciada por Cajero 1 - Turno Mañana
+2026-09-30,18:44:20,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:51:50,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:51:53,user001,Cajero 1 - Turno Mañana,cajero,Exitoso,Sesion iniciada por Cajero 1 - Turno Mañana
+2026-09-30,18:51:56,admin,Intento fallido,desconocido,Fallido,Contraseña incorrecta para usuario: admin
+2026-09-30,18:52:52,admin,Intento fallido,desconocido,Fallido,Contraseña incorrecta para usuario: admin
+2026-09-30,18:52:56,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:52:58,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:53:01,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:53:03,admin,Administrador General,administrador,Exitoso,Sesion iniciada por Administrador General
+2026-09-30,18:53:04,user001,Cajero 1 - Turno Mañana,cajero,Exitoso,Sesion iniciada por Cajero 1 - Turno Mañana
+2026-09-30,18:53:07,user001,Cajero 1 - Turno Mañana,cajero,Exitoso,Sesion iniciada por Cajero 1 - Turno Mañana

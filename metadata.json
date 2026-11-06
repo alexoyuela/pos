@@ -1,0 +1,6 @@
+{
+  "name": "El Rincón Cafe, Ron & Sazón - Sistema POS",
+  "description": "Sistema POS para comidas rápidas con gestión de comedores, pedidos a cocina, delivery, inventario CSV, control de cajeros y reportes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

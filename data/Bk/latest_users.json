@@ -1,0 +1,46 @@
+[
+  {
+    "id": "admin",
+    "username": "admin",
+    "role": "administrador",
+    "name": "Administrador General",
+    "pin": "Mprietro01",
+    "desc": "Acceso total y configuración"
+  },
+  {
+    "id": "user001",
+    "username": "user001",
+    "role": "cajero",
+    "name": "Cajero 1 - Turno Mañana",
+    "cashierNumber": 1,
+    "pin": "Poi001",
+    "desc": "Turno Mañana"
+  },
+  {
+    "id": "user002",
+    "username": "user002",
+    "role": "cajero",
+    "name": "Cajero 2 - Turno Tarde",
+    "cashierNumber": 2,
+    "pin": "Poi002",
+    "desc": "Turno Tarde"
+  },
+  {
+    "id": "user003",
+    "username": "user003",
+    "role": "cajero",
+    "name": "Cajero 3 - Turno Noche",
+    "cashierNumber": 3,
+    "pin": "Poi003",
+    "desc": "Turno Noche"
+  },
+  {
+    "id": "user004",
+    "username": "user004",
+    "role": "cajero",
+    "name": "Cajero 4 - Fin de Semana",
+    "cashierNumber": 4,
+    "pin": "Poi004",
+    "desc": "Fin de Semana"
+  }
+]

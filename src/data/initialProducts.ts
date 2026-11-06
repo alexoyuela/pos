@@ -1,0 +1,413 @@
+import { Product } from '../types';
+
+export const INITIAL_PRODUCTS: Product[] = [
+  {
+    id: 1,
+    barra: "7702011001",
+    nombre: "Coca Cola 350",
+    valor: 3000,
+    descripcion: "coca cola 350ml fría en botella de vidrio",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 50,
+    imagen: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 2,
+    barra: "7702011002",
+    nombre: "Coca Cola 400",
+    valor: 4000,
+    descripcion: "coca cola 400ml personal",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 3,
+    barra: "7702011003",
+    nombre: "Cerveza Poker",
+    valor: 3000,
+    descripcion: "350 ml vidrio bien fría",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 60,
+    imagen: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 4,
+    barra: "7702011004",
+    nombre: "Cerveza Aguila",
+    valor: 3000,
+    descripcion: "350 ml vidrio tradicional",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 60,
+    imagen: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 5,
+    barra: "7702011005",
+    nombre: "Cerveza Aguila Ligth",
+    valor: 3000,
+    descripcion: "350 ml vidrio suave y refrescante",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 50,
+    imagen: "https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 6,
+    barra: "7702011006",
+    nombre: "Hamburguesa Sencilla",
+    valor: 13000,
+    descripcion: "125 grs Carne de Res, Queso, Lechuga, Tomate, Cebolla en salsa BBQ, Papa Chips, Salsas, Pan.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 30,
+    imagen: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 7,
+    barra: "7702011007",
+    nombre: "Hamburguesa de Pollo",
+    valor: 15000,
+    descripcion: "150 grs Filete de Pollo apanado o a la plancha, Queso, Lechuga, Tomate, Cebolla, Papa Chips, Salsas, Pan.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 25,
+    imagen: "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 8,
+    barra: "7702011008",
+    nombre: "Hamburguesa Mixta",
+    valor: 18000,
+    descripcion: "Carne de Res 125 grs y Filete de Pollo 100 grs, Queso, Lechuga, Tomate, Cebolla en salsa BBQ, Papa Chips, Salsas.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 20,
+    imagen: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 9,
+    barra: "7702011009",
+    nombre: "Hamburguesa Criolla",
+    valor: 19000,
+    descripcion: "Carne de Res artesanal, Huevo frito, Tocineta crocante, Queso, Cebolla caramelizada, Tomate, Lechuga, Salsas.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 20,
+    imagen: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 10,
+    barra: "7702011010",
+    nombre: "Hamburguesa Especial",
+    valor: 20000,
+    descripcion: "125 grs Carne de Res, 1 chorizo 100% Cerdo, Queso, Lechuga, Tomate, Cebolla en salsa BBQ, Papa Chips, Salsas, Pan.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 25,
+    imagen: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 11,
+    barra: "7702011011",
+    nombre: "Hamburguesa Doble Carne",
+    valor: 20000,
+    descripcion: "125 grs Carne (doble porción), Queso, Lechuga, Tomate, Cebolla en salsa BBQ, Papa Chips, Salsas, Pan.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 20,
+    imagen: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 12,
+    barra: "7702011012",
+    nombre: "Hamburguesa Super Especial",
+    valor: 25000,
+    descripcion: "125 grs Carne, 1 chorizo 100% Cerdo, Queso, Lechuga, Tomate, Cebolla en salsa BBQ, Papa Chips, Salsas, Pan.",
+    categoria: "Hamburguesas",
+    saleCocina: true,
+    stock: 15,
+    imagen: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 13,
+    barra: "7702011013",
+    nombre: "Perro Caliente Americano",
+    valor: 9500,
+    descripcion: "Salchicha Americana a la plancha, Queso, Cebolla en Salsa BBQ, Papa Chips, Salsas, Pan.",
+    categoria: "Perros Calientes",
+    saleCocina: true,
+    stock: 35,
+    imagen: "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 14,
+    barra: "7702011014",
+    nombre: "Choriperro",
+    valor: 10000,
+    descripcion: "Chorizo 100% Cerdo a la plancha, Queso, Cebolla, Salsa BBQ, Papa Chips, Salsa, Pan.",
+    categoria: "Perros Calientes",
+    saleCocina: true,
+    stock: 30,
+    imagen: "https://images.unsplash.com/photo-1627054234553-611a1961427b?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 15,
+    barra: "7702011015",
+    nombre: "Salchipapa",
+    valor: 12000,
+    descripcion: "Salchicha Americana a la plancha, Papa Francesa, Queso, Salsas.",
+    categoria: "Salchipapas",
+    saleCocina: true,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 16,
+    barra: "7702011016",
+    nombre: "Choripapa",
+    valor: 13000,
+    descripcion: "Chorizo 100% Cerdo a la plancha, Papa Francesa, Queso, Salsas.",
+    categoria: "Salchipapas",
+    saleCocina: true,
+    stock: 35,
+    imagen: "https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 17,
+    barra: "7702011017",
+    nombre: "Salchipapa Especial",
+    valor: 18000,
+    descripcion: "Salchicha Americana a la plancha, Chorizo 100% Cerdo a la plancha, Papa Francesa, Queso, Salsas.",
+    categoria: "Salchipapas",
+    saleCocina: true,
+    stock: 25,
+    imagen: "https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 18,
+    barra: "7702011018",
+    nombre: "Salchipapa Martin`s",
+    valor: 24000,
+    descripcion: "Salchicha Americana a la plancha, Chorizo 100% Cerdo a la plancha, Carne artesanal, cebolla en Salsa BBQ, Papa Francesa, Queso, Salsas.",
+    categoria: "Salchipapas",
+    saleCocina: true,
+    stock: 20,
+    imagen: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 19,
+    barra: "7702011019",
+    nombre: "Salchipapa Familiar",
+    valor: 44000,
+    descripcion: "Salchicha Americana a la plancha, Chorizo 100% Cerdo a la plancha, Carne artesanal, cebolla en Salsa BBQ, Papa Francesa, Queso, Salsas para compartir.",
+    categoria: "Salchipapas",
+    saleCocina: true,
+    stock: 15,
+    imagen: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 20,
+    barra: "7702011020",
+    nombre: "Churrasco a la Plancha Especial",
+    valor: 25000,
+    descripcion: "Churrasco 175 grs, Papa a la Francesa, Patacon Dulce, Chorizo 100% Cerdo.",
+    categoria: "Carnes y Plancha",
+    saleCocina: true,
+    stock: 15,
+    imagen: "https://images.unsplash.com/photo-1558030006-450675393462?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 21,
+    barra: "7702011021",
+    nombre: "Churrasco a la Plancha Jumbo",
+    valor: 36000,
+    descripcion: "Churrasco 350 grs, Papa a la Francesa, Patacon Dulce, Chorizo 100% Cerdo.",
+    categoria: "Carnes y Plancha",
+    saleCocina: true,
+    stock: 10,
+    imagen: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 22,
+    barra: "7702011022",
+    nombre: "Costilla de Cerdo Tradicional",
+    valor: 20000,
+    descripcion: "Costilla de Cerdo a la plancha 200 grs con adobo artesanal, Papa Francesa y Patacón.",
+    categoria: "Carnes y Plancha",
+    saleCocina: true,
+    stock: 20,
+    imagen: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 23,
+    barra: "7702011023",
+    nombre: "Costila de Cerdo Especial",
+    valor: 25000,
+    descripcion: "Costilla de Cerdo en Salsa BBQ 250 grs, Papa a la Francesa, Patacon Dulce, Chorizo 100% Cerdo.",
+    categoria: "Carnes y Plancha",
+    saleCocina: true,
+    stock: 15,
+    imagen: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 24,
+    barra: "7702011024",
+    nombre: "Costila de Cerdo Jumbo",
+    valor: 36000,
+    descripcion: "Costilla de Cerdo en Salsa BBQ 500 grs, Papa a la Francesa, Patacon Dulce, Chorizo 100% Cerdo.",
+    categoria: "Carnes y Plancha",
+    saleCocina: true,
+    stock: 10,
+    imagen: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 25,
+    barra: "7702011025",
+    nombre: "Arepa con Chorizo",
+    valor: 9000,
+    descripcion: "Chorizo 100% Cerdo a la plancha, Arepa con Queso.",
+    categoria: "Adicionales",
+    saleCocina: true,
+    stock: 30,
+    imagen: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 26,
+    barra: "7702011026",
+    nombre: "Porcion Papa",
+    valor: 5500,
+    descripcion: "Porcion crocante de papas francesas con sal y salsas.",
+    categoria: "Adicionales",
+    saleCocina: true,
+    stock: 50,
+    imagen: "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 27,
+    barra: "7702011027",
+    nombre: "Jalapeños",
+    valor: 1000,
+    descripcion: "Porción de jalapeños encurtidos en rodajas.",
+    categoria: "Adicionales",
+    saleCocina: false,
+    stock: 50,
+    imagen: "https://images.unsplash.com/photo-1588165171080-c89acfa5a259?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 28,
+    barra: "7702011028",
+    nombre: "Coca Cola 1000",
+    valor: 8000,
+    descripcion: "Cocacola litro fría para compartir.",
+    categoria: "Bebidas",
+    saleCocina: false,
+    stock: 30,
+    imagen: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 29,
+    barra: "7702011029",
+    nombre: "Jugos Naturales Agua",
+    valor: 7000,
+    descripcion: "Jugo natural en agua preparado al instante (Mora, Lulo, Maracuyá, Mango).",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 30,
+    barra: "7702011030",
+    nombre: "Jugos Naturales Leche",
+    valor: 8000,
+    descripcion: "Jugo natural en leche cremoso (Fresa, Mora, Guanábana, Mango).",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 31,
+    barra: "7702011031",
+    nombre: "Limonada de Coco",
+    valor: 8000,
+    descripcion: "Limonada cremosa de coco frappé con leche condensada y coco.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 35,
+    imagen: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 32,
+    barra: "7702011032",
+    nombre: "Limonada Natural",
+    valor: 7000,
+    descripcion: "Limonada natural clásica con zumo recién exprimido y hielo.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 33,
+    barra: "7702011033",
+    cafe: true,
+    nombre: "Milo Caliente",
+    valor: 4000,
+    descripcion: "Milo caliente tradicional con leche espumosa y toque de canela.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 30,
+    imagen: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 34,
+    barra: "7702011034",
+    cafe: true,
+    nombre: "Cafe en Leche",
+    valor: 3000,
+    descripcion: "Café con leche caliente con café colombiano recién colado.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 50,
+    imagen: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 35,
+    barra: "7702011035",
+    cafe: true,
+    nombre: "Cafe Tinto Campesino",
+    valor: 2000,
+    descripcion: "Tinto colombiano tradicional recién filtrado, con o sin panela.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 60,
+    imagen: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 36,
+    barra: "7702011036",
+    cafe: true,
+    nombre: "Capuchino Especial",
+    valor: 5000,
+    descripcion: "Café espresso concentrado con espuma de leche cremosa y cacao en polvo.",
+    categoria: "Bebidas",
+    saleCocina: true,
+    stock: 40,
+    imagen: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&auto=format&fit=crop&q=80"
+  }
+];
+
+export const INITIAL_CATEGORIES = [
+  "Bebidas",
+  "Hamburguesas",
+  "Perros Calientes",
+  "Salchipapas",
+  "Carnes y Plancha",
+  "Adicionales"
+];
